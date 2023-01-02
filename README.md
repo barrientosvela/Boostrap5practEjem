@@ -1,2 +1,1 @@
-# ejemplos
-html y css
+# Practica con ejemplos de Boostrap
