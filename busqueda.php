@@ -13,6 +13,7 @@
 
     <link href="css/bootstrap.min.mod.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <meta name="theme-color" content="#712cf9">
 
@@ -73,6 +74,39 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-light rounded" aria-label="Thirteenth navbar example">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+                <a class="navbar-brand col-lg-3 me-0" href="#">Centered nav</a>
+                <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="insert.php">Insertar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Buscar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+                    <button class="btn btn-primary" id="registro">Registrate</button>
+                </div>
+            </div>
+        </div>
+    </nav>
     <div class="cabecera" style="background-image: url('videos/waves.svg');width: 100%;height: 300px;">
         <!-- Barra de busqueda -->
         <form class="barraBusqueda" action="#" method="post">
@@ -85,11 +119,8 @@
                 <input type="text" class="form-control" placeholder="Search" name="busqueda">
                 <button class="btn btn-success" type="submit" name="buscar">Go</button>
             </div>
-
-            
         </form>
     </div>
-
     <main>
         <div class="album py-5 bg-light">
             <div class="container">
@@ -156,7 +187,7 @@
                     }
     ?>
     </main>
-
+    <div class="b-example-divider"></div>
     <div class="container">
         <footer class="py-5">
             <div class="row">
@@ -217,7 +248,8 @@
     </div>
 
 
-    <script src="js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/busqueda.js"></script>
 
 
 </body>
